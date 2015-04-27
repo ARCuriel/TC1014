@@ -1,0 +1,44 @@
+#Aram Rodrigo Curiel Graxiola
+#A01229982
+#WSQ 16
+
+print()
+file = open("93cars.dat.txt", "r")
+print ("Name of the file: ", file.name)
+print()
+
+count = 1
+prices = 0
+cities = 0
+mpg = 0
+
+for line in file:
+    count = count + 1
+    if (count % 2 == 0):
+        
+        price = line[42:46]
+        price = float(price)
+        prices = prices + price
+        
+        city = line[52:54]
+        city = float(city)
+        cities = cities + city
+	
+        MPG = line[55:57]
+        MPG = float(MPG)
+        mpg = mpg + MPG
+
+    cars = count/2
+    ave_prices = prices/cars
+    ave_cities = cities/cars
+    ave_mpg = mpg/cars
+    
+file.close()
+
+print("There are",count,"lines")
+print("TOTAL OF PRICES:",prices)
+print()
+print("The average gas mileage in city(MPG) is: ",ave_cities)
+print("The average gas mileage on highway(MPG) is: ",ave_mpg)
+print("The average for price of the cars is: ",ave_prices)
+
