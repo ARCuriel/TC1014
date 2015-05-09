@@ -21,6 +21,6 @@ while (ans == "Yes"):
         print("There is no square root for negative numbers!!")
     else:
             square = sqrt(num)
-            print("The saçquare root is: ",square)
+            print("The square root is: ",square)
     ans = str(input("Do you want to try again? (Yes/No): "))
     print("Thanks and have a nice day!")
