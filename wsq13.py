@@ -18,7 +18,7 @@ while (ans == "Yes"):
     if (num == 0):
         print("The square root is: 0")
     elif(num < 0):
-        print("There is no suare root for negative numbers!!")
+        print("There is no square root for negative numbers!!")
     else:
             square = sqrt(num)
             print("The saçquare root is: ",square)
